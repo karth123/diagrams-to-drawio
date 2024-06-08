@@ -23,7 +23,7 @@ def dot_to_mxgraph(dot_file_content):
     mx_cell_1 = ET.SubElement(root, 'mxCell', id="1", parent="0")
 
     # Nodes
-    new_url_base = "https://github.com/karth123/diagrams_natviz/blob/master/resources/"
+    new_url_base = "<your_url_base"
     for object in graph['objects']:
         if 'pos' in object:
             old_image_url = object['image']
